@@ -1,0 +1,42 @@
+if (surface_exists(surf))
+{
+    surface_set_target(surf);
+    //set the dark overlay
+    draw_set_colour(c_black);
+    //change darkness level of the environment here
+    draw_set_alpha(0.4);
+    draw_rectangle(0,0,room_width,room_height,false);
+    
+    //set circle of vision 
+    draw_set_blend_mode(bm_subtract);
+    
+    //start circles of vision
+    draw_set_colour(c_black); //change to c_white if need be
+    draw_set_alpha(0.2)
+    //draw the circle of vision around hero
+    
+    with (objTeddy) //add the actual main character object here
+    {   //torchlight 1
+        draw_circle(x + random_range(-1,1), y + random_range(-1,1), 60 + random_range(-1,1), false);
+    }
+    
+    draw_set_colour(c_white); //change to c_orange to add torchlight color
+    draw_set_alpha(1);
+    
+    with (objTeddy) //add the actual character object here
+    {   //bigger faded torchlight 2
+        draw_circle(x + random_range(-1,1), y + random_range(-1,1), 45 + random_range(-1,1), false);
+    }
+    
+    //reset all the set draws 
+    draw_set_blend_mode(bm_normal);
+    draw_set_alpha(1);
+    surface_reset_target();
+    
+} else {
+    //in some cases the surface is not created so we create it here
+    surf = surface_create(room_width, room_height);
+    surface_set_target(surf);
+    draw_clear_alpha(c_black, 0);
+    surface_reset_target();
+}
