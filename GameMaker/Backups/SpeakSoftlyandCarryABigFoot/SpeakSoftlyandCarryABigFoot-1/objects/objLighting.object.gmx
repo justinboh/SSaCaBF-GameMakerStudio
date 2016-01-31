@@ -74,7 +74,7 @@ surface_reset_target();
     
     with (objTeddy) //add the actual main character object here
     {   //torchlight 1
-        draw_circle(x+70 + random_range(-1,1), y+70 + random_range(-1,1), 260 + random_range(-1,1), false);
+        draw_circle(x+70 + random_range(-1,1), y+70 + random_range(-1,1), 250 + random_range(-1,1), false);
     }
     
     draw_set_colour(c_white); //change to c_white if need be
@@ -83,7 +83,7 @@ surface_reset_target();
     
     with (objTeddy) //add the actual main character object here
     {   //torchlight 1
-        draw_circle(x+70 + random_range(-1,1), y+70 + random_range(-1,1), 190 + random_range(-1,1), false);
+        draw_circle(x+70 + random_range(-1,1), y+70 + random_range(-1,1), 200 + random_range(-1,1), false);
     }
     
     draw_set_colour(c_white); //change to c_orange to add torchlight color

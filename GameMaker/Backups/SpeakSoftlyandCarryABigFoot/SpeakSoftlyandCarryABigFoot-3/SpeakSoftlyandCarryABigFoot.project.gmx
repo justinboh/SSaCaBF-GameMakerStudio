@@ -27,9 +27,11 @@
     <object>objects\obj_platform_mid</object>
     <object>objects\obj_platform_left</object>
     <object>objects\obj_platform_right</object>
+    <object>objects\obj_box</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room1</room>
+    <room>rooms\room_cave_1</room>
+    <room>rooms\room_cave_2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

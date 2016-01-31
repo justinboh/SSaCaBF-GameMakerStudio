@@ -65,7 +65,7 @@ if (place_meeting(x,y+1, obj_platform_mid))
    vsp = key_jump * -jumpspeed;
 }
 
-//Horizontal Collision
+//Horizontal Collision middle platform
 if (place_meeting(x+hsp, y, obj_platform_mid))
 {
    while(!place_meeting(x+sign(hsp), y, obj_platform_mid)) //colliding elements must be called wall_obj
@@ -76,7 +76,7 @@ if (place_meeting(x+hsp, y, obj_platform_mid))
 }
 x += hsp;
 
-//Vertical Collision
+//Vertical Collision middle platform
 if (place_meeting(x, y+vsp, obj_platform_mid))
 {
    while(!place_meeting(x, y+sign(vsp), obj_platform_mid))
@@ -86,6 +86,50 @@ if (place_meeting(x, y+vsp, obj_platform_mid))
      vsp=0;
 }
 y += vsp;
+/*
+//Horizontal Collision left platform
+if (place_meeting(x+hsp, y, obj_platform_left))
+{
+   while(!place_meeting(x+sign(hsp), y, obj_platform_left)) //colliding elements must be called wall_obj
+   {
+     x+= sign(hsp);
+   }
+     hsp=0;
+}
+
+
+//Vertical Collision left platform
+if (place_meeting(x, y+vsp, obj_platform_left))
+{
+   while(!place_meeting(x, y+sign(vsp), obj_platform_left))
+   {
+     y+= sign(vsp);
+   }
+     vsp=0;
+}
+
+//Horizontal Collision right platform
+if (place_meeting(x+hsp, y, obj_platform_right))
+{
+   while(!place_meeting(x+sign(hsp), y, obj_platform_right)) //colliding elements must be called wall_obj
+   {
+     x+= sign(hsp);
+   }
+     hsp=0;
+}
+x += hsp;
+
+//Vertical Collision right platform
+if (place_meeting(x, y+vsp, obj_platform_right))
+{
+   while(!place_meeting(x, y+sign(vsp), obj_platform_right))
+   {
+     y+= sign(vsp);
+   }
+     vsp=0;
+}
+y += vsp;
+*/
 </string>
           </argument>
         </arguments>

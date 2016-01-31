@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <TextureGroup>
   <texture scale="1">Default_0.png</texture>
-  <tpe x="4" y="4" tpage="Default_0" entry="5">bg_cave.tpe</tpe>
+  <tpe x="4" y="4" tpage="Default_0" entry="6">bg_cave.tpe</tpe>
   <tpe x="2" y="234" tpage="Default_0" entry="2">platform_middle_0.tpe</tpe>
   <tpe x="234" y="2" tpage="Default_0" entry="0">sprite0_0.tpe</tpe>
   <tpe x="234" y="170" tpage="Default_0" entry="3">platform_left_0.tpe</tpe>
   <tpe x="358" y="170" tpage="Default_0" entry="4">platform_right_0.tpe</tpe>
   <tpe x="2" y="402" tpage="Default_0" entry="1">sprite1_0.tpe</tpe>
+  <tpe x="410" y="2" tpage="Default_0" entry="5">col_0.tpe</tpe>
 </TextureGroup>

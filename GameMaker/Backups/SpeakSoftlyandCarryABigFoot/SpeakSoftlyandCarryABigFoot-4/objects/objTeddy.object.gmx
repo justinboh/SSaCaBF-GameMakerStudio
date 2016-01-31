@@ -74,7 +74,7 @@ if (place_meeting(x+hsp, y, obj_platform_mid))
    }
      hsp=0;
 }
-
+x += hsp;
 
 //Vertical Collision middle platform
 if (place_meeting(x, y+vsp, obj_platform_mid))
@@ -85,8 +85,8 @@ if (place_meeting(x, y+vsp, obj_platform_mid))
    }
      vsp=0;
 }
-
-
+y += vsp;
+/*
 //Horizontal Collision left platform
 if (place_meeting(x+hsp, y, obj_platform_left))
 {
@@ -129,7 +129,7 @@ if (place_meeting(x, y+vsp, obj_platform_right))
      vsp=0;
 }
 y += vsp;
-
+*/
 </string>
           </argument>
         </arguments>
